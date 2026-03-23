@@ -1,0 +1,7 @@
+# Kontrol Cerdas 2026
+
+Repositori ini disusun sebagai media pembelajaran untuk mata kuliah **Kontrol Cerdas 2026** yang ditujukan bagi mahasiswa **Semester IV Program Studi Teknik Otomasi, Jurusan Teknik Elektro, Politeknik Negeri Bali**. Materi dalam repositori ini berfokus pada pengenalan konsep, dasar teori, serta implementasi praktis pada dua topik utama, yaitu **kontrol fuzzy** dan **neural control**. Kedua topik tersebut dipilih karena memiliki peran penting dalam pengembangan sistem kendali modern yang mampu menangani ketidakpastian, nonlinearitas, dan kompleksitas yang sering dijumpai pada sistem nyata.
+
+Selain diperuntukkan bagi mahasiswa yang mengikuti perkuliahan secara resmi, repositori ini juga terbuka untuk **kalangan umum** yang memiliki minat dalam bidang sistem kendali cerdas, otomasi, dan kecerdasan buatan terapan. Oleh karena itu, materi diupayakan disajikan dengan bahasa yang terstruktur, cukup akademik, tetapi tetap ramah bagi pembelajar mandiri. Repositori ini diharapkan dapat menjadi sumber belajar awal yang bermanfaat bagi siapa saja yang ingin memahami dasar-dasar kontrol fuzzy dan neural control dalam konteks pendidikan vokasi dan aplikasi teknik.
+
+Semoga repositori ini dapat menjadi sarana belajar yang bermanfaat, mendorong rasa ingin tahu, dan membantu mahasiswa maupun pembaca umum untuk memahami bahwa kontrol cerdas bukan hanya sekadar teori, melainkan juga alat penting dalam merancang sistem otomasi yang adaptif, efisien, dan relevan dengan perkembangan teknologi saat ini.
