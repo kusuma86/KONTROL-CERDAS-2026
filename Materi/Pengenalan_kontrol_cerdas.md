@@ -47,7 +47,7 @@ Kontrol cerdas merupakan pendekatan kontrol yang mampu:
 
 Istilah “cerdas” dalam kontrol cerdas merujuk pada karakteristik yang meniru kecerdasan biologis.
 
-<h3 style="color:#7e22ce;">2.1 Kemampuan Pembelajaran (*Learning Capability*)</h3>
+<h3 style="color:#7e22ce;">2.1 Kemampuan Pembelajaran (<i>Learning Capability</i>)</h3>
 
 Sistem kontrol cerdas dapat **belajar** dari:
 - **Data historis**
@@ -56,7 +56,7 @@ Sistem kontrol cerdas dapat **belajar** dari:
 
 **Contoh:** *Neural network controller* yang meningkatkan akurasi kontrol seiring waktu operasi.
 
-<h3 style="color:#7e22ce;">2.2 Kemampuan Adaptasi (*Adaptation*)</h3>
+<h3 style="color:#7e22ce;">2.2 Kemampuan Adaptasi (<i>Adaptation</i>)</h3>
 
 Kontrol cerdas dapat menyesuaikan diri terhadap:
 - Perubahan parameter sistem
@@ -73,7 +73,7 @@ Sistem dapat melakukan:
 - **Inferensi fuzzy** untuk informasi yang kabur
 - **Optimasi keputusan** dari berbagai alternatif
 
-<h3 style="color:#7e22ce;">2.4 Pengenalan Pola (*Pattern Recognition*)</h3>
+<h3 style="color:#7e22ce;">2.4 Pengenalan Pola (<i>Pattern Recognition</i>)</h3>
 
 Kemampuan untuk:
 - Mengidentifikasi pola dalam data sensor
