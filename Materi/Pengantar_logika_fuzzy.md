@@ -9,7 +9,7 @@
 
 Dalam beberapa tahun terakhir, logika fuzzy digunakan semakin luas dalam berbagai bidang. Penerapannya tidak hanya ditemukan pada sistem yang kompleks, tetapi juga pada produk sehari-hari seperti kamera, handycam, mesin cuci, dan oven microwave. Di dunia industri, logika fuzzy dipakai dalam kontrol proses, peralatan medis, sistem pendukung keputusan, hingga pemilihan portofolio keuangan. Konsep ini diperkenalkan oleh **Lotfi A. Zadeh**.
 
-![Lotfi A. Zadeh](images/zadeh.jpeg)
+![Lotfi A. Zadeh](../images/zadeh.jpeg)
 
 Secara sempit, logika fuzzy dapat dipahami sebagai sistem logika yang merupakan pengembangan dari logika multivalued, yaitu logika yang tidak hanya mengenal dua nilai kebenaran. Secara lebih luas, logika fuzzy sangat dekat dengan teori himpunan fuzzy, yaitu teori mengenai kelompok objek yang batas keanggotaannya tidak selalu tegas. Dalam teori ini, suatu objek tidak harus sepenuhnya menjadi anggota atau bukan anggota suatu himpunan. Sebaliknya, objek dapat menjadi anggota secara sebagian.
 
