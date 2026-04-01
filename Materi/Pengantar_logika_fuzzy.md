@@ -21,11 +21,11 @@ Logika fuzzy juga sering dipadukan dengan jaringan saraf tiruan (*neurocomputing
 
 Secara umum, logika fuzzy meniru cara berpikir manusia. Dalam banyak situasi, manusia tidak selalu membutuhkan angka yang sangat presisi untuk mengambil keputusan. Misalnya, ketika memperingatkan seseorang tentang benda yang jatuh, kita tidak perlu menyebut massa dan kecepatannya secara tepat. Cukup dengan mengatakan, “Awas, ada benda jatuh!”, pesan sudah dapat dipahami.
 
-![Presisi-Makna](images/presisi.png)
+![Presisi-Makna](../images/presisi.png)
 
 Dengan sudut pandang tersebut, logika fuzzy dapat dilihat sebagai cara praktis untuk memetakan ruang input ke ruang output. Kotak hitam pemetaan ini dapat berupa sistem fuzzy, jaringan saraf tiruan, sistem pakar, persamaan diferensial, dan sebagainya.
 
-![Pemetaan Input-Output](images/blackbox.jpg)
+![Pemetaan Input-Output](../images/blackbox.jpg)
 
 Beberapa contoh pemetaan input–output pada sistem fuzzy antara lain sebagai berikut.
 
@@ -167,7 +167,7 @@ Contoh lain:
 
 Diagram Venn digunakan untuk menggambarkan hubungan antarhimpunan secara visual. Dalam diagram ini, `U` menyatakan semesta pembicaraan.
 
-![Venn Diagram](images/venn.png)
+![Venn Diagram](../images/venn.png)
 
 Contoh:
 
@@ -181,7 +181,7 @@ Gabungan dua himpunan `A` dan `B` ditulis:
 
 `A ∪ B = {x | x ∈ A atau x ∈ B}`
 
-![Gabungan Diagram](images/gabungan.png)
+![Gabungan Diagram](../images/gabungan.png)
 
 Contoh:
 
@@ -213,7 +213,7 @@ Irisan dua himpunan `A` dan `B` ditulis:
 
 `A ∩ B = {x | x ∈ A dan x ∈ B}`
 
-![Irisan Diagram](images/irisan.png)
+![Irisan Diagram](../images/irisan.png)
 
 Contoh:
 
@@ -248,11 +248,11 @@ Sebelum membangun sistem fuzzy, semua istilah yang digunakan harus didefinisikan
 
 Logika fuzzy dimulai dari konsep **himpunan fuzzy**. Himpunan fuzzy adalah himpunan yang tidak memiliki batas keanggotaan yang sepenuhnya tegas. Untuk memahami hal ini, bandingkan dengan himpunan klasik. Dalam himpunan klasik, suatu elemen hanya memiliki dua kemungkinan: menjadi anggota atau bukan anggota.
 
-![Himpunan Hari](images/himpunanHari.png)
+![Himpunan Hari](../images/himpunanHari.png)
 
 Sebagai contoh, himpunan hari dalam seminggu secara jelas mencakup Senin, Kamis, dan Sabtu, tetapi jelas tidak mencakup sepeda, buku, mentega, atau sepatu. Namun, ketika kita membahas himpunan “hari yang termasuk akhir pekan”, situasinya tidak lagi setegas itu. Sabtu dan Minggu tentu dianggap akhir pekan. Akan tetapi, bagaimana dengan Jumat? Bagi sebagian orang, Jumat sudah terasa seperti bagian dari akhir pekan, meskipun secara formal masih termasuk hari kerja.
 
-![Himpunan Akhir Pekan](images/himpunanAkhirPekan.png)
+![Himpunan Akhir Pekan](../images/himpunanAkhirPekan.png)
 
 Contoh ini menunjukkan bahwa persepsi individu dan latar belakang budaya dapat memengaruhi definisi suatu konsep. Bahkan kamus pun tidak selalu memberikan batas yang mutlak tegas. Dalam kondisi semacam ini, logika “ya atau tidak” menjadi kurang memadai. Penalaran fuzzy menjadi relevan karena ia mampu mewakili cara manusia benar-benar memahami suatu konsep.
 
@@ -262,11 +262,11 @@ Secara teknis, hal ini berkaitan dengan logika multivalued. Jika ditanyakan, “
 
 Contoh yang sangat umum adalah konsep *weekend-ness* atau “tingkat keakhirpekanan”. Sepanjang hari Jumat, dan bahkan sebagian kecil hari Kamis, dapat dikatakan memiliki sifat sebagai bagian dari akhir pekan. Tingkat sifat tersebut dapat digambarkan oleh sebuah kurva yang memetakan input berupa waktu dalam seminggu ke output berupa derajat “akhir pekan”. Kurva inilah yang disebut **fungsi keanggotaan** (*membership function*).
 
-![Konsep Biner dan Multi Value](images/himpunanMultiValue.png)
+![Konsep Biner dan Multi Value](../images/himpunanMultiValue.png)
 
 Contoh lain dari kekaburan konsep dapat dilihat pada pergantian musim. Batas antara satu musim dan musim lainnya tidak selalu berubah secara mendadak, melainkan sering berlangsung secara bertahap.
 
-![Konsep Pergantian Musim](images/pergantianMusim.png)
+![Konsep Pergantian Musim](../images/pergantianMusim.png)
 
 ### Atribut Himpunan Fuzzy
 
@@ -294,7 +294,7 @@ Sebagai contoh, jika kita ingin mendefinisikan konsep “orang tinggi”, maka t
 
 Pendekatan biner akan memaksa kita memilih hanya dua kemungkinan: tinggi atau tidak tinggi. Sebaliknya, pendekatan fuzzy memungkinkan penilaian yang lebih halus. Inilah yang membuat logika fuzzy lebih dekat dengan cara manusia menilai realitas.
 
-![Konsep Tinggu Badan Fuzzy](images/tinggiBadan.png)
+![Konsep Tinggu Badan Fuzzy](../images/tinggiBadan.png)
 
 Contoh perhitungan:
 
@@ -304,7 +304,7 @@ Untuk himpunan fuzzy **paruh baya**, menggunakan fungsi keanggotaan segitiga, se
 
 Artinya, usia 40 tahun memiliki derajat keanggotaan 0,5 dalam himpunan *paruh baya*.
 
-![Konsep Tinggi Badan berdasarkan Fuzzy](images/paruhBaya.png)
+![Konsep Tinggi Badan berdasarkan Fuzzy](../images/paruhBaya.png)
 
 ---
 
@@ -312,7 +312,7 @@ Artinya, usia 40 tahun memiliki derajat keanggotaan 0,5 dalam himpunan *paruh ba
 
 Dalam sistem fuzzy, operasi logika digunakan untuk menggabungkan atau memodifikasi derajat keanggotaan. Operasi ini menjadi dasar ketika sistem menafsirkan aturan-aturan fuzzy. Operasi **OR** akan mencari nilai **maksimum** sedangkan operasi **AND** akan mencari nilai **minimum** dari setiap keanggotaan yang terlibat dalam operasi tersebut. Amati ilustrasi dari operasi tersebut di bawah ini.
 
-![Operasi Fuzzy](images/operasiFuzzy.png)
+![Operasi Fuzzy](../images/operasiFuzzy.png)
 ---
 
 ## Aturan If–Then
@@ -329,7 +329,7 @@ Contoh lain:
 
 `JIKA pelayanan istimewa ATAU makanan enak MAKA tip besar`
 
-![IF-THEN](images/ifthen.png)
+![IF-THEN](../images/ifthen.png)
 
 Aturan seperti ini memungkinkan sistem mengambil keputusan berdasarkan istilah yang dekat dengan bahasa manusia.
 
@@ -361,7 +361,7 @@ Secara umum, FIS mencakup tiga komponen utama:
 - operasi logika,
 - aturan if–then.
 
-![FIS](images/fis.png)
+![FIS](../images/fis.png)
 
 ---
 
