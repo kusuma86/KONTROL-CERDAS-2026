@@ -23,7 +23,7 @@ Konsep penting lainnya adalah aturan fuzzy berbentuk **jika–maka** (*if–then
 
 Logika fuzzy juga sering dipadukan dengan jaringan saraf tiruan (*neurocomputing*) dan algoritma genetika. Kombinasi ini dikenal sebagai **soft computing**. Berbeda dari *hard computing* yang cenderung menuntut presisi tinggi dan kepastian, *soft computing* lebih toleran terhadap ketidakpastian, ketidakjelasan, dan kebenaran parsial. Karena itu, pendekatan ini sering menghasilkan sistem yang lebih sederhana, tangguh, dan murah. Salah satu contoh yang populer adalah **ANFIS** (*Adaptive Neuro-Fuzzy Inference System*).
 
-Secara umum, logika fuzzy meniru cara berpikir manusia. Dalam banyak situasi, manusia tidak selalu membutuhkan angka yang sangat presisi untuk mengambil keputusan. Misalnya, ketika memperingatkan seseorang tentang benda yang jatuh, kita tidak perlu menyebut massa dan kecepatannya secara tepat. Cukup dengan mengatakan, “Awas, ada benda jatuh!”, pesan sudah dapat dipahami.
+Secara umum, logika fuzzy meniru cara berpikir manusia. Fuzzy menggabungkan antara **Presisi** dan **Makna**. Dalam banyak situasi, manusia tidak selalu membutuhkan angka yang sangat presisi untuk mengambil keputusan. Misalnya, ketika memperingatkan seseorang tentang benda yang jatuh, kita tidak perlu menyebut massa dan kecepatannya secara tepat. Cukup dengan mengatakan, “Awas, ada benda jatuh!”, pesan sudah dapat dipahami.
 
 ![Presisi-Makna](../images/presisi.png)
 
