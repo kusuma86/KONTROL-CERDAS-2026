@@ -5,7 +5,8 @@
 
 ---
 ## Mind Map
-![Mind Map Materi](../images/Struktur dan Fondasi Sistem Logika Fuzzy.png)
+![Mind Map Materi](../images/mindmap.png)
+
 ---
 
 ## Pendahuluan
