@@ -4,6 +4,9 @@
 **Dosen Pengampu:** Dr. I N. K. Wardana
 
 ---
+## Mind Map
+![Mind Map Materi](../images/Struktur dan Fondasi Sistem Logika Fuzzy.png)
+---
 
 ## Pendahuluan
 
