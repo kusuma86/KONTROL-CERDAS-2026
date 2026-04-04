@@ -2,6 +2,7 @@
 
 **Mata Kuliah:** Kontrol Cerdas (MKB2436304405)  
 **Dosen Pengampu:** Dr. I N. K. Wardana
+**Audio Pendamping:**[Klik di sini](https://drive.google.com/file/d/1uusCZEOhpQKlxBiefPo0XCovlnK8phJE/view?usp=sharing)
 
 ---
 ## Mind Map
