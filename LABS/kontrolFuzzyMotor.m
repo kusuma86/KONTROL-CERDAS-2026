@@ -168,15 +168,9 @@ function fis = createMotorFIS()
 
     %% Input 1: Error [-100, 100]
     fis = addInput(fis, [-100 100], "Name", "error");
-
-    fis = addMF(fis, "error", "trapmf", [-100 -100 -100 0], ...
-        Name = "N");
-
-    fis = addMF(fis, "error", "trimf", [-100 0 100], ...
-        Name = "Z");
-
-    fis = addMF(fis, "error", "trapmf", [0 100 100 100], ...
-        Name = "P");
+    fis = addMF(fis, "error", "trapmf", [-100 -100 -100 0],Name = "N");
+    fis = addMF(fis, "error", "trimf", [-100 0 100], Name = "Z");
+    fis = addMF(fis, "error", "trapmf", [0 100 100 100], Name = "P");
 
     %% Input 2: Delta Error [-50, 50]
     fis = addInput(fis, [-50 50], "Name", "delta_error");
