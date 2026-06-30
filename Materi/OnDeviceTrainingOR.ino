@@ -16,8 +16,8 @@
 // =====================================================
 
 float learningRate = 0.8;
-int maxEpoch = 10000;
-float targetMSE = 0.00001;
+int maxEpoch = 500;
+float targetMSE = 0.001;
 
 // =====================================================
 // DATASET OR
