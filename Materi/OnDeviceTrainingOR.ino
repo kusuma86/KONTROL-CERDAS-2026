@@ -16,7 +16,7 @@
 // =====================================================
 
 float learningRate = 0.8;
-int maxEpoch = 500;
+int maxEpoch = 1500;
 float targetMSE = 0.001;
 
 // =====================================================
@@ -89,7 +89,7 @@ float randomWeight() {
 // =====================================================
 
 void initializeWeights() {
-  randomSeed(3);
+  // randomSeed(3);
 
   for (int i = 0; i < N_H1; i++) {
     for (int j = 0; j < N_INPUT; j++) {
