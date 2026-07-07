@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <math.h>
+#include <esp_system.h>
 
 // =====================================================
 // ARSITEKTUR JARINGAN
@@ -16,7 +17,7 @@
 // =====================================================
 
 float learningRate = 0.8;
-int maxEpoch = 1500;
+int maxEpoch = 1200;
 float targetMSE = 0.001;
 
 // =====================================================
@@ -64,6 +65,9 @@ float delta3[N_OUTPUT];
 float delta2[N_H2];
 float delta1[N_H1];
 
+// Random seed
+uint32_t trainingSeed = 0;
+
 // =====================================================
 // FUNGSI AKTIVASI
 // =====================================================
@@ -74,6 +78,18 @@ float logsig(float n) {
 
 float dlogsig_from_output(float a) {
   return a * (1.0 - a);
+}
+
+// =====================================================
+// RANDOM SEED BERBEDA UNTUK SETIAP BOARD / RUN
+// =====================================================
+
+uint32_t generateRandomSeed() {
+  uint32_t seed = esp_random();
+  seed ^= micros();
+  seed ^= (uint32_t)(ESP.getEfuseMac() & 0xFFFFFFFF);
+
+  return seed;
 }
 
 // =====================================================
@@ -89,7 +105,12 @@ float randomWeight() {
 // =====================================================
 
 void initializeWeights() {
-  // randomSeed(3);
+  trainingSeed = generateRandomSeed();
+  randomSeed(trainingSeed);
+
+  Serial.print("Random seed yang digunakan: ");
+  Serial.println(trainingSeed);
+  Serial.println();
 
   for (int i = 0; i < N_H1; i++) {
     for (int j = 0; j < N_INPUT; j++) {
@@ -262,6 +283,8 @@ void trainNetwork() {
   Serial.println("Mulai training on-device...");
   Serial.println();
 
+  bool targetReached = false;
+
   for (int epoch = 1; epoch <= maxEpoch; epoch++) {
     for (int i = 0; i < 4; i++) {
       trainOneSample(X[i][0], X[i][1], T[i]);
@@ -269,7 +292,7 @@ void trainNetwork() {
 
     float mse = calculateMSE();
 
-    if (epoch % 1000 == 0) {
+    if (epoch % 100 == 0) {
       Serial.print("Epoch: ");
       Serial.print(epoch);
       Serial.print(" | MSE: ");
@@ -282,8 +305,20 @@ void trainNetwork() {
       Serial.print("MSE akhir: ");
       Serial.println(mse, 8);
       Serial.println();
+
+      targetReached = true;
       break;
     }
+  }
+
+  if (!targetReached) {
+    float mse = calculateMSE();
+
+    Serial.println();
+    Serial.println("Training mencapai maxEpoch.");
+    Serial.print("MSE akhir: ");
+    Serial.println(mse, 8);
+    Serial.println();
   }
 }
 
